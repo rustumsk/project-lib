@@ -1,0 +1,65 @@
+:root{
+    --primary-color: #502d16;
+    --secondary-color: #fed7aa;
+    --third-color: #fde047;
+}
+@font-face {
+    font-family: main;
+    src: url("./fonts/font.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: var(--primary-color);
+    flex-direction: column;
+}
+.header{
+    flex: .80;
+    border-bottom: 2px solid var(--third-color);
+    border-top: 2px solid var(--third-color);
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    flex: 4;
+    background-color: var(--secondary-color);
+}
+.footer{
+    flex: .50;
+    border-top: 2px solid var(--third-color);
+    border-bottom: 2px solid var(--third-color);
+}
+
+.head{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    font-size: 1rem;
+    font-family: main;
+}
+.add{
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.add-book{
+    height: 50px;
+    width: 250px;
+    border-radius: 24px;
+    font-family: main;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+}
+.add-book:hover{
+    background-color: var(--third-color);
+}
