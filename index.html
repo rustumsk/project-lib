@@ -4,18 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <div class="head"><h1>Header</h1></div>
+            <div class="head"><h1>Welcome to the Library!</h1></div>
             <div class="add"><button class="add-book">
                 Add Book
             </button></div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <dialog class="dialog">
+                <form>
+                    <legend>Make a new book!</legend>
+                    <div class="auth">
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author" autofocus>
+                    </div>
+
+                    <div class="tit">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+
+                    <div class="pag">
+                        <label for="pages">Pages</label>
+                        <input type="number" name="pages" id="pages" value="10">
+                    </div>
+                    <div class="read">
+                        <button class="re">Read</button>
+                    </div>
+                    <div class="submit">
+                        <button class="sub">Submit</button>
+                        <button class="can">Cancel</button>
+                    </div>
+                </form>
+            </dialog>
+            <div class="book-container">
+                <div class="book">
+                    <div class="top">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="mid">
+                        <div class= "au">
+                            <p class="label">Author: </p>
+                            <p class="nam">Rustumsk</p>
+                        </div>
+                        <div class="au tite">
+                            <p class="label ti">Title:</p>
+                            <p class="nam n-ti">Lord of the Ring</p>
+                        </div>
+                        <div class="au page">
+                            <p class="label pa">Pages: </p>
+                            <p class="nam n-pa">246</p>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="bot">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="top">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="mid">
+                        <div class="A">
+                            
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="bot">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer"></div>
     </div>
 </body>

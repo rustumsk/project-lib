@@ -2,6 +2,7 @@
     --primary-color: #502d16;
     --secondary-color: #fed7aa;
     --third-color: #fde047;
+    --fourth-color: #7f1d1d;
 }
 @font-face {
     font-family: main;
@@ -25,6 +26,9 @@ body{
     flex-direction: row;
 }
 .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 4;
     background-color: var(--secondary-color);
 }
@@ -50,11 +54,11 @@ body{
     align-self: center;
 }
 .add-book{
-    height: 50px;
-    width: 250px;
+    height: 40px;
+    width: 200px;
     border-radius: 24px;
     font-family: main;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     font-weight: bold;
     background-color: var(--primary-color);
@@ -62,4 +66,150 @@ body{
 }
 .add-book:hover{
     background-color: var(--third-color);
+}
+.add-book:active{
+    box-shadow: 2px 2px 5px var(--secondary-color);
+}
+.dialog{
+    width: 25em;
+    height: 30em;
+    border: 5px solid var(--primary-color);
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    font-family: main;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.auth, .tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth > label, .tit > label{
+    font-size: 25px;
+    color: var(--primary-color);
+}
+.auth > input, .tit > input{
+    width: 20rem;
+    border: 0;
+    border-bottom: 4px solid var(--third-color);
+    font-size: 15px;
+    outline: none;
+}
+.tit{
+    margin-top: 2rem;
+}
+.pag{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pag > label{
+    font-size: 25px;
+    color: var(--primary-color);
+}
+.pag > input{
+    width: 5rem;
+    border: 0;
+    border-bottom: 4px solid var(--third-color);
+    font-size: 15px;
+    outline: none;
+}
+
+.read{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.read > button{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: greenyellow;
+    border: 2px solid var(--third-color);
+}
+.re:hover{
+    background-color: var(--secondary-color);
+}
+.red:hover{
+    background-color: var(--secondary-color);
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+.submit > button{
+    flex: 1 1 0;
+    min-height: 2rem;
+    width: 5rem;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--third-color);
+    border-radius: 15px;
+}
+.submit > button:hover{
+    background-color: black;
+    color: white;
+}
+
+.book-container{
+    flex:1;
+    max-width: 50rem;
+    height: 30rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.book{
+    flex: 1;
+    max-width: 10rem;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+.top{
+    background-color: var(--fourth-color);
+}
+.bot{
+    background-color: var(--fourth-color);
+}
+
+.top, .bot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.top div, .bot div{
+    background-color: var(--third-color);
+    border: 5px solid var(--fourth-color);
+}
+
+.mid{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 1fr 2fr;
+}
+.au{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-family: main;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.label{
+    color: var(--third-color);
+}
+.nam{
+    color: white;
+    word-wrap: break-word;
+}
+.n-ti{
 }
